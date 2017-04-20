@@ -16,7 +16,7 @@ var sessionConfig = {
  }
 };
 
-var app = express(;
+var app = express();
 
 require('./server/config/mongoose.js');
 
