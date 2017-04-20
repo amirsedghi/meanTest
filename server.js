@@ -14,7 +14,7 @@ var sessionConfig = {
   httpOnly:false, // Forces cookies to only be used over http
   maxAge: 360000000
  }
-}
+};
 
 var app = express();
 
@@ -31,5 +31,5 @@ var routes_setter = require('./server/config/routes.js');
 routes_setter(app);
 
 var server = app.listen(9001, function() {
- console.log("Your localhost is over 9000!!!");
+ console.log("Your localhost is over 9001!!!");
 });
