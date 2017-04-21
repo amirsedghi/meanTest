@@ -16,7 +16,7 @@ var sessionConfig = {
  }
 };
 
-var app = express();
+var app = express(;
 
 require('./server/config/mongoose.js');
 
@@ -30,6 +30,6 @@ app.use(express.static(path.join(__dirname, "./client/static")));
 var routes_setter = require('./server/config/routes.js');
 routes_setter(app);
 
-var server = app.listen(9001, function() {
+var server = app.listen(9002, function() {
  console.log("Your localhost is over 9001!!!");
 });
